@@ -1,0 +1,35 @@
+{
+    "name": "ejaboneta/laravel-fullcalendar-9",
+    "description": "A FullCalendar helper for Laravel 9.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Shawn Tunney",
+            "email": "shawn.tunney@gmail.com"
+        },
+        {
+            "name": "Ernesto Jaboneta",
+            "email": "ernesto@ernestojaboneta.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "illuminate/support": "~9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ejaboneta\\LaravelFullcalendar9\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EJaboneta\\LaravelFullcalendar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "EJaboneta\\LaravelFullcalendar\\Facades\\Calendar"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
