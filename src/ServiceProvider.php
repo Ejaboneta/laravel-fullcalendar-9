@@ -1,4 +1,6 @@
-<?php namespace EJaboneta\LaravelFullcalendar;
+<?php 
+
+namespace EJaboneta\LaravelFullcalendar;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
@@ -13,7 +15,7 @@ class ServiceProvider extends BaseServiceProvider
     public function register()
     {
         $this->app->bind('laravel-fullcalendar', function ($app) {
-            return $app->make('EJaboneta\LaravelFullcalendar\Calendar');
+            return $app->make(Calendar::class);
         });
     }
 
